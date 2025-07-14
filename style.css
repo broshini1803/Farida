@@ -1980,7 +1980,7 @@ section {
 .navbar-linkedin {
   display: flex;
   align-items: center;
-  margin-right: 24px;
+  margin-right: 28px;
 }
 @media (max-width: 700px) {
   .navbar-linkedin {
