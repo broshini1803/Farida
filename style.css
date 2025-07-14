@@ -1939,10 +1939,10 @@ section {
   .container,
   .section,
   .section.hero {
-    width: calc(100vw - 16px) !important;
-    max-width: calc(100vw - 16px) !important;
-    min-width: calc(100vw - 16px) !important;
-    margin: 0 8px !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-width: 100vw !important;
+    margin: 0 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
     box-sizing: border-box;
@@ -1956,5 +1956,40 @@ section {
     width: 100vw !important;
     max-width: 100vw !important;
     overflow-x: hidden !important;
+  }
+} 
+
+@media (max-width: 700px) {
+  /* Add margin to all sections except home/hero */
+  .section:not(.hero) {
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+    width: calc(100vw - 24px) !important;
+    max-width: calc(100vw - 24px) !important;
+    box-sizing: border-box;
+  }
+  /* Remove margin for hero section */
+  .section.hero {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+  /* Center all cards with equal space */
+  .about-card,
+  .custom-about-card,
+  .about-card-narrow,
+  .about-card-wide,
+  .management-card,
+  .company-card,
+  .gallery-card,
+  .sustainability-card,
+  .news-card {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    max-width: 95vw !important;
+    width: 100% !important;
+    box-sizing: border-box;
   }
 } 
